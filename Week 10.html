@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Fonts Overview</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="./dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/flexboxes.css">
+  <link rel="stylesheet" href="assets/typography.css">
+  <link rel="stylesheet" href="assets/nav.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body> <div class="relative w-full h-[70vh] group">
+  <img src="afbeeldingen/Trein.jpg" alt="trein" class="absolute w-full h-full inset-0 object-cover transition-opacity duration-300 opacity-100 group-hover:opacity-0">
+  <img src="afbeeldingen/station.jpg" alt="" class="absolute w-full h-full inset-0 object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+  <h2 class="absolute bottom-[4%] left-[5%] text-white text-xs font-bold">
+    Nayeli Faucompret- 1GDM2
+  </h2>
+</div>
+
+<!-- Tekst onder de afbeelding, links uitgelijnd -->
+<div class="px-[5%] py-8 max-w-full text-left">
+  <h1 class="text-3xl font-bold mb-2">Projectdocumentatie week 10</h1>
+  <h2 class="text-[15pt] font-normal ml-1 mt-2">Klik op een week om de inhoud te bekijken</h2>
+</div>
+
+<!-- Week-links op één rij -->
+<div class="flex flex-wrap gap-4 px-[5%] py-5">
+    <a href="Week 1.html" class="week-btn">Week 1</a>
+    <a href="Week 2.html" class="week-btn">Week 2</a>
+    <a href="Week 3.html" class="week-btn">Week 3</a>
+    <a href="Week 4.html" class="week-btn">Week 4</a>
+    <a href="Week 5.html" class="week-btn">Week 5</a>
+    <a href="Week 6.html" class="week-btn">Week 6</a>
+    <a href="Week 7.html" class="week-btn">Week 7</a>
+    <a href="Week 8.html" class="week-btn">Week 8</a>
+    <a href="Week 9.html" class="week-btn">Week 9</a>
+    <a href="Week 10.html" class="week-btn">Week 10</a>
+    <a href="Week 11.html" class="week-btn">Week 11</a>
+    <a href="index.html" class="week-btn">Home</a>
+</div>
+
+<!-- Tekst-opdracht -->
+<div class="px-[5%] py-8 max-w-full text-left flex flex-col gap-y-4">
+
+  <h3 class="text-lg font-bold">Application in Figma</h3>
+
+  <!-- Tekst-opdracht -->
+  <div class="flex flex-col py-8 max-w-full text-left gap-y-4">
+    <h4 class="text-lg font-bold">Verder uitwerken van de applicatie in figma</h4>
+    <p>In deze Les werkte ik vooral aan mijn figma applicatie.</p>
+    <p>Om mijn drie eerste schermen uit te werken, maakte ik meer schermen aan om het als een echte app te doen voelen.</p>
+    <p>Met die schermen zorgde ik ervoor dat je een profiel had en instellingen kon bekijken, dat je een ticket kon kopen,</p>
+    <p>Dat je reizen in je favorieten kon opslaan, en nog meer. Bij mijn schermen maakt ik nog kleine werkende knopjes.</p>
+    <p>Treinsamenstellingen bekijken, een knop waar je een uur kan selecteren, en andere knopjes om open te klikken. </p>
+  </div>
+
+    <div class="flex flex-col py-8 max-w-full text-left gap-y-4">
+    <h4 class="text-lg font-bold">Feedback tailwind website</h4>
+    <p>De feedback die ik heb gekregen was vooral om kleine aanpassingen te doen om mijn bestand nog proffesioneler te maken.</p>
+    <p>Zoals: Meer foto's (van dezelfde fotograaf), sommige foto's horizontaal zetten en tekst in flexboxes zetten</p>
+  </div>
+
+  <!-- Link Figma -->
+  <div class="flex flex-col gap-y-2">
+    <h3 class="text-lg font-bold mt-8">Link Figma</h3>
+ 
+ <p>
+  <a href="https://www.figma.com/design/5NWg7yQpx32Nu9J82wIgi6/Interactieve-schermen-lost-in-tra-i-nslation?t=n3OrpxJ8x4kdN3oN-1" 
+     class="text-blue-600 underline hover:text-blue-800" target="_blank">
+    Open mijn Figma bestand
+  </a>
+</p>
+  </div>
+
+</div>
+<footer class="mt-20 bg-black text-white">
+  <div class="px-[5%] py-12 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-y-6">
+    
+    <!-- Titeltje + link -->
+    <div class="flex flex-col gap-y-2">
+      <h4 class="text-sm font-semibold uppercase tracking-wide text-gray-400">
+        Laatst gepubliceerde link op GitHub
+      </h4>
+
+      <a 
+        href="https://github.com/JOUW-GITHUB-LINK-HIER" 
+        target="_blank"
+        class="text-base font-medium text-blue-500 hover:text-blue-400 transition-colors duration-300"
+      >
+        Bekijk het project op GitHub
+      </a>
+    </div>
+
+    <!-- Eventueel extra info of copyright -->
+    <div class="text-gray-500 text-xs">
+      &copy; 2025 Nayeli Faucompret. Alle rechten voorbehouden.
+    </div>
+
+  </div>
+</footer>
+</body>
+
+</html>

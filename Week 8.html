@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Fonts Overview</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="./dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/flexboxes.css">
+  <link rel="stylesheet" href="assets/typography.css">
+  <link rel="stylesheet" href="assets/nav.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body> 
+  <div class="relative w-full h-[70vh] group">
+  <img src="afbeeldingen/Trein.jpg" alt="trein" class="absolute w-full h-full inset-0 object-cover transition-opacity duration-300 opacity-100 group-hover:opacity-0">
+  <img src="afbeeldingen/station.jpg" alt="" class="absolute w-full h-full inset-0 object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+  <h2 class="absolute bottom-[4%] left-[5%] text-white text-xs font-bold">
+    Nayeli Faucompret- 1GDM2
+  </h2>
+</div>
+
+<!-- Tekst onder de afbeelding, links uitgelijnd -->
+<div class="px-[5%] py-8 max-w-full text-left">
+  <h1 class="text-3xl font-bold mb-2">Projectdocumentatie week 8</h1>
+  <h2 class="text-[15pt] font-normal ml-1 mt-2">Klik op een week om de inhoud te bekijken</h2>
+</div>
+
+<!-- Week-links op één rij -->
+<div class="flex flex-wrap gap-4 px-[5%] py-5">
+    <a href="Week 1.html" class="week-btn">Week 1</a>
+    <a href="Week 2.html" class="week-btn">Week 2</a>
+    <a href="Week 3.html" class="week-btn">Week 3</a>
+    <a href="Week 4.html" class="week-btn">Week 4</a>
+    <a href="Week 5.html" class="week-btn">Week 5</a>
+    <a href="Week 6.html" class="week-btn">Week 6</a>
+    <a href="Week 7.html" class="week-btn">Week 7</a>
+    <a href="Week 8.html" class="week-btn">Week 8</a>
+    <a href="Week 9.html" class="week-btn">Week 9</a>
+    <a href="Week 10.html" class="week-btn">Week 10</a>
+    <a href="Week 11.html" class="week-btn">Week 11</a>
+    <a href="index.html" class="week-btn">Home</a>
+</div>
+
+<!-- Tekst-opdracht: GSM schermen en Tailwind installatie -->
+<div class="px-[5%] py-8 max-w-full text-left flex flex-col gap-y-4">
+
+  <h3 class="text-lg font-bold">GSM schermen en tailwind installatie</h3>
+
+  <div class="flex flex-col gap-y-2">
+    <h4 class="text-base font-bold mt-8">Deel 1 van de les:</h4>
+    <div class="flex flex-col gap-y-1 text-base">
+      <span>Bij het eerste deel van de les kregen we een verduidelijking over wat de volgende stap in Figma zou zijn.</span>
+      <span>Tijdens deze les moesten we onze schermen omzetten naar een gsm-formaat. Het was belangrijk dat alle informatie die oorspronkelijk op de borden stond, ook netjes in de mobiele appversie zou passen.</span>
+      <span>Daardoor moesten we nadenken over de lay-out, de leesbaarheid en hoe we elementen anders konden schikken zodat alles nog logisch en gebruiksvriendelijk bleef.</span>
+    </div>
+  </div>
+
+  <div class="flex flex-col gap-y-2">
+    <h4 class="text-base font-bold mt-8">Deel 2 van de les:</h4>
+    <div class="flex flex-col gap-y-1 text-base">
+      <span>In het tweede deel van de les installeerde ik Tailwind.</span>
+      <span>Daarna kregen we de opdracht om onze vorige ontwerpdocumentatie over te zetten in een kopie van de indexpagina die hoort bij de Tailwind-installatie.</span>
+    </div>
+  </div>
+
+  <div class="flex flex-col my-8 p-4 gap-y-4">
+
+    <h3 class="text-lg font-bold">Prompt die ik aan ChatGPT stelde:</h3>
+    <div class="flex flex-col gap-y-1 text-base">
+      <span>1) de afbeeldingen links uitgelijnd zijn met mijn tekst hierboven,</span>
+      <span>2) alle items netjes in kolommen staan in Tailwind CSS,</span>
+      <span>3) alle afbeeldingen dezelfde hoogte hebben, zodat het er consistent uitziet?</span>
+    </div>
+
+    <h3 class="text-lg font-bold mt-8">Antwoord van ChatGPT:</h3>
+    <div class="flex flex-col gap-y-1 text-base">
+      <span>Om je afbeeldingen netjes uit te lijnen met je tekst en consistent te maken in kolommen met Tailwind CSS, kun je het volgende doen:</span>
+      <span>1) <strong>Zet alle items in een grid container</strong> zoals <code>grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8</code> zodat ze automatisch netjes in kolommen komen.</span>
+      <span>2) <strong>Zorg dat elke afbeelding dezelfde hoogte heeft</strong> met classes zoals <code>h-80</code> of <code>h-[hoogte]</code>.</span>
+      <span>3) <strong>Gebruik flexbox</strong> in elk item zodat tekst en afbeelding samen links uitgelijnd blijven.</span>
+    </div>
+
+    <pre class="bg-gray-100 p-3 rounded shadow overflow-x-auto text-sm mt-8">
+&lt;div class="flex flex-col gap-2 items-start"&gt;
+  &lt;img src="afbeeldingen/voorbeeld.jpeg" alt="Voorbeeld"
+       class="w-80 h-80 object-cover rounded-lg shadow"&gt;
+  &lt;h4 class="font-semibold text-base"&gt;Titel afbeelding&lt;/h4&gt;
+  &lt;p&gt;Korte beschrijving van de afbeelding.&lt;/p&gt;
+&lt;/div&gt;
+    </pre>
+
+    <p class="text-base">
+      Herhaal dit voor alle items. Plaats de grid container rond alle items zodat alles netjes in kolommen staat en consistent is.
+    </p>
+
+  </div>
+
+  <div class="flex flex-col gap-y-2">
+    <h3 class="text-lg font-bold">Link Figma</h3>
+    
+    <p>
+  <a href="https://www.figma.com/design/WjOtLFcvSMQyTzx24pB9YU/Lost-in-tra-i-nslation?t=n3OrpxJ8x4kdN3oN-1" 
+     class="text-blue-600 underline hover:text-blue-800" target="_blank">
+    Open mijn Figma bestand
+  </a>
+</p>
+
+  </div>
+</div>
+<footer class="mt-20 bg-black text-white">
+  <div class="px-[5%] py-12 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-y-6">
+    
+    <!-- Titeltje + link -->
+    <div class="flex flex-col gap-y-2">
+      <h4 class="text-sm font-semibold uppercase tracking-wide text-gray-400">
+        Laatst gepubliceerde link op GitHub
+      </h4>
+
+      <a 
+        href="https://papaya-longma-65c2ee.netlify.app/" 
+        target="_blank"
+        class="text-base font-medium text-blue-500 hover:text-blue-400 transition-colors duration-300"
+      >
+        Bekijk het project op GitHub
+      </a>
+    </div>
+
+    <!-- Eventueel extra info of copyright -->
+    <div class="text-gray-500 text-xs">
+      &copy; 2025 Nayeli Faucompret. Alle rechten voorbehouden.
+    </div>
+
+  </div>
+</footer>
+</body>
+
+</html>
