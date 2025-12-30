@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+h1, h2 {
+  letter-spacing: 0.05em;
+}
+
+.btn {
+      display: inline-block;
+      margin-left: 4%;
+      margin-top: 20px;
+      padding: 20px 40px;
+      background-color: #000000;
+      color: white;
+      font-weight: bold;
+      font-size: 1.2em;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+      cursor: pointer; /* belangrijk zodat het voelt als knop */
+    }
+
+.btn:hover {
+      background-color: #333333;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      transform: translateY(-2px);
+    }
+
+.week-btn {
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 1.125rem;
+  border-radius: 9999px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.week-btn:hover {
+  background-color: #333;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.img-container {
+  position: relative;
+  width: 50%;
+}
+
+.gallery { display: flex; gap: 12px; flex-wrap: wrap; }
+/* .thumb { width: 160px; height: 120px; object-fit: cover; cursor: zoom-in; border-radius: 8px; } */
+
