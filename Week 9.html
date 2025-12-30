@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Fonts Overview</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="./dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/flexboxes.css">
+  <link rel="stylesheet" href="assets/typography.css">
+  <link rel="stylesheet" href="assets/nav.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+  <div class="relative w-full h-[70vh] group">
+  <img src="afbeeldingen/Trein.jpg" alt="trein" class="absolute w-full h-full inset-0 object-cover transition-opacity duration-300 opacity-100 group-hover:opacity-0">
+  <img src="afbeeldingen/station.jpg" alt="" class="absolute w-full h-full inset-0 object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+  <h2 class="absolute bottom-[4%] left-[5%] text-white text-xs font-bold">
+    Nayeli Faucompret- 1GDM2
+  </h2>
+</div>
+
+<!-- Tekst onder de afbeelding, links uitgelijnd -->
+<div class="px-[5%] py-8 max-w-full text-left">
+  <h1 class="text-3xl font-bold mb-2">Projectdocumentatie week 9</h1>
+  <h2 class="text-[15pt] font-normal ml-1 mt-2">Klik op een week om de inhoud te bekijken</h2>
+</div>
+
+<!-- Week-links op één rij -->
+<div class="flex flex-wrap gap-4 px-[5%] py-5">
+    <a href="Week 1.html" class="week-btn">Week 1</a>
+    <a href="Week 2.html" class="week-btn">Week 2</a>
+    <a href="Week 3.html" class="week-btn">Week 3</a>
+    <a href="Week 4.html" class="week-btn">Week 4</a>
+    <a href="Week 5.html" class="week-btn">Week 5</a>
+    <a href="Week 6.html" class="week-btn">Week 6</a>
+    <a href="Week 7.html" class="week-btn">Week 7</a>
+    <a href="Week 8.html" class="week-btn">Week 8</a>
+    <a href="Week 9.html" class="week-btn">Week 9</a>
+    <a href="Week 10.html" class="week-btn">Week 10</a>
+    <a href="Week 11.html" class="week-btn">Week 11</a>
+    <a href="index.html" class="week-btn">Home</a>
+</div>
+
+<!-- Tekst-opdracht -->
+<div class="px-[5%] py-8 max-w-full text-left flex flex-col gap-y-4">
+
+  <h3 class="text-lg font-bold">Application in Figma</h3>
+
+  <!-- Deel 1 -->
+  <div class="flex flex-col gap-y-2">
+    <h4 class="text-base font-bold mt-8">Deel 1 van de les:</h4>
+    <div class="flex flex-col gap-y-1 text-base">
+      <span>Tegen deze les moest de eerste fase van je Figma application klaar zijn (de drie schermen).</span>
+      <span>Tijdens het eerste deel van de les werd uitgelegd wat er van ons verwacht wordt tegen de volgende les, en moesten we daaraan verder werken.</span>
+      <span>Wat wordt verwacht?: interactieve schermen met meerdere frames (flow).</span>
+      <span>Bijvoorbeeld: een reis in je favorieten zetten, tickets boeken,...</span>
+    </div>
+  </div>
+
+  <!-- Deel 2 -->
+  <div class="flex flex-col gap-y-2">
+    <h4 class="text-base font-bold mt-8">Deel 2 van de les:</h4>
+    <div class="flex flex-col gap-y-1 text-base">
+      <span>Tijdens het tweede deel van de les moesten we onze website met Tailwind verder uitwerken en in GitHub en Netlify publiceren.</span>
+    </div>
+  </div>
+
+  <!-- Link Figma -->
+  <div class="flex flex-col gap-y-2">
+    <h3 class="text-lg font-bold mt-8">Link Figma</h3>
+ 
+ <p>
+  <a href="https://www.figma.com/design/WjOtLFcvSMQyTzx24pB9YU/Lost-in-tra-i-nslation?t=n3OrpxJ8x4kdN3oN-1" 
+     class="text-blue-600 underline hover:text-blue-800" target="_blank">
+    Open mijn Figma bestand
+  </a>
+</p>
+  </div>
+</div>
+<footer class="mt-20 bg-black text-white">
+  <div class="px-[5%] py-12 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-y-6">
+    
+    <!-- Titeltje + link -->
+    <div class="flex flex-col gap-y-2">
+      <h4 class="text-sm font-semibold uppercase tracking-wide text-gray-400">
+        Laatst gepubliceerde link op GitHub
+      </h4>
+
+      <a 
+        href="https://papaya-longma-65c2ee.netlify.app/" 
+        target="_blank"
+        class="text-base font-medium text-blue-500 hover:text-blue-400 transition-colors duration-300"
+      >
+        Bekijk het project op GitHub
+      </a>
+    </div>
+
+    <!-- Eventueel extra info of copyright -->
+    <div class="text-gray-500 text-xs">
+      &copy; 2025 Nayeli Faucompret. Alle rechten voorbehouden.
+    </div>
+
+  </div>
+</footer>
+</body>
+
+
+
+</html>
